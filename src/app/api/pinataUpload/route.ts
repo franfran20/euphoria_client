@@ -6,7 +6,7 @@ const pinata = new PinataSDK({
   pinataGateway: process.env.PINATA_GATEWAY!,
 });
 
-export async function POST(req: NextRequest, res: NextResponse) {
+export async function POST(req: NextRequest) {
   try {
     const { base64File, filename } = await req.json();
 
