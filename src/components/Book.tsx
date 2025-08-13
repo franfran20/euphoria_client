@@ -10,14 +10,12 @@ export const Book = ({
   name,
   writer,
   genres,
-  chaptersWritten,
   bookId,
 }: {
   coverImage: string;
   name: string;
   writer: string;
   genres: number[];
-  chaptersWritten: number;
   bookId: string;
 }) => {
   return (
@@ -39,7 +37,7 @@ export const Book = ({
 
         <div className="IconAndText" style={{ marginTop: "8px" }}>
           <PenLine color="#179cf6" height="10px" width="10px" />
-          <span style={{ fontSize: "13px" }}>{chaptersWritten}</span>
+          <span style={{ fontSize: "13px" }}>{}</span>
         </div>
       </div>
     </Link>

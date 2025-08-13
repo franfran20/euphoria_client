@@ -29,7 +29,6 @@ export default function XplorePage() {
               writer={book.writer}
               name={book.name}
               genres={book.genres.split(",").map(Number)}
-              chaptersWritten={book.chaptersWritten}
               bookId={book.bookId.toString()}
             />
           ))}
