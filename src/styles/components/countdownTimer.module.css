@@ -1,0 +1,31 @@
+.countdownTimer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3px;
+}
+
+.countdownTimer span {
+  color: #179cf6;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0px 10px;
+  margin-top: -20px;
+}
+
+.individual {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.individual .timeValue {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.individual .timeLabel {
+  color: #ffffff9d;
+  font-size: 10px;
+}

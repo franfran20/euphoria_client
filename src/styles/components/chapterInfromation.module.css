@@ -1,0 +1,91 @@
+.chapterInformation {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.chapterInformation img {
+  width: 250px;
+  height: 350px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.name {
+  font-size: 35px;
+}
+
+.writer {
+  font-size: 19px;
+  color: #ffffffbd;
+}
+
+.completed {
+  color: #179cf6;
+  font-size: 15px;
+}
+
+.chaptersWrittenAndCreatedAt {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.chaptersWrittenAndCreatedAt p {
+  font-size: 15px;
+  color: #ffffffbd;
+}
+
+.goToChapter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0px;
+}
+
+.goToChapter input {
+  background-color: transparent;
+  border: 1px solid #e0e0e03f;
+  color: #fff;
+  padding: 7px 11px;
+  font-size: 16px;
+  border-radius: 12px;
+  width: 170px;
+}
+
+.goToChapter a {
+  padding: 8px 12px;
+  border-radius: 11px;
+  border: none;
+  font-size: 16px;
+  font-weight: 800;
+  background-color: #179cf6;
+  color: #ffffff;
+}
+
+@media (max-width: 1000px) {
+  .chapterInformation {
+    gap: 20px;
+  }
+
+  .chapterInformation img {
+    width: 200px;
+    height: 300px;
+  }
+
+  .name {
+    font-size: 25px;
+  }
+
+  .writer {
+    font-size: 16px;
+  }
+}

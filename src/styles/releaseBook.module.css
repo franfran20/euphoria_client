@@ -1,0 +1,265 @@
+.page {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.pageHeader {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.pageParagraph {
+  font-size: 16px;
+  color: #ffffffb9;
+  margin-bottom: 10px;
+}
+
+.bookCostAndBalance {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 10px 0px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #1b1b1b;
+  border: 1px solid #e0e0e027;
+  padding: 10px 13px;
+  border-radius: 14px;
+}
+
+.info h5 {
+  font-size: 14px;
+  color: #ffffffb9;
+}
+
+.info div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.info img {
+  width: 26px;
+  height: auto;
+  margin-right: 6px;
+}
+
+.info p {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.inputContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+  gap: 40px;
+}
+
+.nameAndDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.inputName,
+.inputDescription {
+  background-color: transparent;
+  border: 1px solid #e0e0e03f;
+  color: #fff;
+  padding: 7px 11px;
+  font-size: 16px;
+  border-radius: 12px;
+  width: 400px;
+}
+
+.inputDescription {
+  width: 450px;
+  height: 80px;
+  padding-top: 10px;
+  padding-bottom: 0;
+  box-sizing: border-box;
+}
+
+.chapterLock {
+  display: flex;
+  flex-direction: column;
+}
+
+.chapterLock h3 {
+  font-size: 20px;
+  color: #fffffff6;
+  margin-bottom: 10px;
+}
+
+.chapterLock p {
+  color: #ffffffc3;
+  font-size: 14px;
+  width: 80%;
+}
+
+.chapterLock input {
+  background-color: transparent;
+  border: 1px solid #e0e0e03f;
+  color: #fff;
+  padding: 7px 11px;
+  font-size: 14px;
+  border-radius: 12px;
+  width: 200px;
+  margin-top: 12px;
+}
+
+.genreAndImagePreview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.genreAndCoverImage {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.genre {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.genre h4 {
+  margin: 6px 0px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.genre span {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.genreOptions {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+}
+
+.selectedGenre,
+.unselectedGenre {
+  padding: 8px 10px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 13px;
+  width: fit-content;
+  color: #fff;
+}
+
+.selectedGenre {
+  background-color: #179cf6;
+}
+
+.unselectedGenre {
+  background-color: #1b1b1b;
+}
+
+.coverImageInput {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.coverImageInput h4 {
+  font-size: 17px;
+}
+
+.coverImageInput p {
+  font-size: 14px;
+  color: #ffffffb9;
+  margin-top: -7px;
+}
+
+.coverImageInput input {
+  display: none;
+}
+
+.coverImageInput label {
+  font-size: 15px;
+  padding: 6px 12px;
+  background-color: transparent;
+  border: 0.5px solid #e0e0e03f;
+  border-radius: 12px;
+  width: fit-content;
+}
+
+.imagePreview {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.imgFullWidth {
+  width: 320px;
+  height: 190px;
+  object-fit: cover;
+}
+
+.imgBookWidth {
+  width: 210px;
+  height: 310px;
+  object-fit: cover;
+}
+
+.createBookBtn {
+  width: fit-content;
+  background-color: #131313;
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 25px;
+}
+
+.createBookBtn:hover {
+  scale: 1.05;
+  font-weight: 900;
+  background-color: #0e0e0e;
+}
+
+@media (max-width: 1000px) {
+  .inputName,
+  .inputDescription {
+    width: 290px;
+  }
+
+  .inputDescription {
+    width: 310px;
+  }
+
+  .imgFullWidth {
+    width: 270px;
+    height: 150px;
+  }
+
+  .imgBookWidth {
+    width: 160px;
+    height: 260px;
+  }
+}

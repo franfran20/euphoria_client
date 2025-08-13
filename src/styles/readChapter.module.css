@@ -1,0 +1,79 @@
+.page {
+  width: 90%;
+  margin: 30px auto;
+}
+
+.chapterHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px 0px;
+  margin-top: 40px;
+  gap: 10px;
+}
+
+.chapterHeader h5 {
+  font-size: 25px;
+  color: #179cf6;
+}
+
+.chapterHeader span {
+  color: #179cf6;
+  font-size: 13px;
+}
+
+.chapterWriting {
+  width: 90%;
+  padding-bottom: 40px;
+}
+
+.chapterWriting h1,
+.chapterWriting h2,
+.chapterWriting h3,
+.chapterWriting h4,
+.chapterWriting h5,
+.chapterWriting h6 {
+  margin: 13px 0px;
+}
+
+.chapterWriting p,
+.chapterWriting p,
+.chapterWriting p,
+.chapterWriting p,
+.chapterWriting p,
+.chapterWriting p {
+  margin: 13px 0px;
+}
+
+.chapterWriting ol,
+.chapterWriting li {
+  margin: 5px 0px;
+}
+
+.notSubscribed {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: center;
+}
+
+.lockIcon {
+  color: #494949;
+  width: 50px;
+  height: auto;
+}
+
+.notSubscribed h4 {
+  color: #fff;
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.notSubscribed p {
+  width: 70%;
+  max-width: 700px;
+  min-width: 280px;
+  font-size: 15px;
+  color: #fafafada;
+}

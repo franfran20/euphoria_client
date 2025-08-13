@@ -1,0 +1,143 @@
+/* Navbar.module.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 35px;
+  width: 100%;
+  z-index: 700;
+  background-color: #111111;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo a {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  color: #fff;
+}
+
+.navLinks a:hover {
+  scale: 1.05;
+  color: #ffffff9a;
+}
+
+/* sidebar  */
+
+.sidebarIcon {
+  display: none;
+}
+
+.sidebar {
+  display: none;
+}
+
+.sidebarClosed {
+  display: none;
+}
+
+.sidebarOverlay {
+  display: none;
+}
+
+.loginBtnsSidebar {
+  display: none;
+}
+
+.navOverlay {
+  display: none;
+}
+
+.authButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.signedInDetails p {
+  padding: 10px 13px;
+  background-color: #000;
+  border-radius: 14px;
+  font-weight: 700;
+}
+
+/* for smaller screens */
+@media (max-width: 1000px) {
+  .navLinks {
+    display: none;
+  }
+
+  .sidebarIcon {
+    display: block;
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 50%;
+    min-width: 210px;
+    padding: 50px 15px;
+    z-index: 1100;
+    background-color: #111111;
+  }
+
+  .navOverlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000000a8;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    display: block;
+  }
+
+  .sidebarLinks {
+    margin: 30px 0px 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .authButtonSidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    position: fixed;
+    bottom: 40px;
+  }
+
+  .authButtons {
+    display: none;
+  }
+}

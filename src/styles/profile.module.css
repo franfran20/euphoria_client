@@ -1,0 +1,327 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.userDetails {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 30px 0px;
+  width: 100%;
+  gap: 38px;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.userInfo h2 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  background-color: #1f1f1f;
+  border: 1px solid #e0e0e027;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  padding: 10px 20px;
+}
+
+.bio h5 {
+  color: #ffffff73;
+  margin-bottom: 7px;
+}
+
+.balancesAndBookInfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 10px 0px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #1b1b1b;
+  border: 1px solid #e0e0e027;
+  padding: 10px 13px;
+  border-radius: 14px;
+}
+
+.info h5 {
+  font-size: 14px;
+  color: #ffffffb9;
+}
+
+.info div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.info img {
+  width: 26px;
+  height: auto;
+  margin-right: 6px;
+}
+
+.info p {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.depositWithdrawMint {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.depositWithdrawMint .inputActionContainer {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.depositWithdrawMint h4 {
+  font-weight: 700;
+  font-size: 17px;
+  margin: 14px 0px;
+}
+
+.depositWithdrawMint .inputAction {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.depositWithdrawMint input {
+  background-color: transparent;
+  border: 1px solid #e0e0e03f;
+  color: #fff;
+  padding: 7px 11px;
+  font-size: 16px;
+  border-radius: 12px;
+  width: 170px;
+}
+
+.depositWithdrawMint button {
+  padding: 8px 12px;
+  border-radius: 11px;
+  border: none;
+  font-size: 16px;
+  font-weight: 800;
+  margin-left: 10px;
+}
+
+.visitFaucet {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #ffffff73;
+}
+
+.visitFaucet:hover {
+  color: #fff;
+  scale: 1.04;
+}
+
+.subscriptionDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.subscriptionDetails h3 {
+  font-size: 20px;
+  color: #ebebebd0;
+  margin-bottom: 10px;
+}
+
+.subscriptionDetails h6 {
+  font-size: 14px;
+  color: #ebebebd0;
+  margin: 20px 0px;
+}
+
+.subscriptionEndsAt button {
+  margin: 10px 0px;
+  padding: 8px 12px;
+  border-radius: 11px;
+  border: none;
+  font-size: 16px;
+  font-weight: 800;
+  background-color: #1a1a1a;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.subscriptionEndsAt button:hover {
+  scale: 1.05;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #0f0f0f;
+}
+
+.signUpAsWriter {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
+}
+
+.signUpAsWriter h3 {
+  font-size: 24px;
+  color: #fff;
+}
+
+.signUpAsWriter p {
+  font-size: 15px;
+  color: #fcfcfcd2;
+  width: 50%;
+  margin: 10px 0px;
+}
+
+.signUpAsWriter input {
+  background-color: transparent;
+  border: 1px solid #e0e0e03f;
+  color: #fff;
+  padding: 7px 11px;
+  font-size: 16px;
+  border-radius: 12px;
+  width: 280px;
+  margin: 10px 0;
+}
+
+.signUpAsWriter button {
+  padding: 8px 12px;
+  border-radius: 11px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #179cf6;
+  color: #fff;
+  width: fit-content;
+  padding: 7px 11px;
+  margin: 13px 0px;
+}
+
+.signUpAsWriter button:hover {
+  background-color: #1b1b1b;
+  cursor: pointer;
+}
+
+.yourReleases,
+.yourBookmarks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 14px;
+}
+
+.releasesHeader {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.releasesHeader a {
+  background-color: #141414;
+  color: #fff;
+  border: none;
+  padding: 10px 13px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.releasesHeader a:hover {
+  background-color: #0f0f0f;
+  scale: 1.05;
+}
+
+.releasesHeader h3,
+.bookmarkHeader {
+  font-size: 30px;
+}
+
+.bookmarkHeader {
+  margin: 30px 0;
+  margin-top: 50px;
+}
+
+/* pagination */
+
+.pagination {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.pagination button {
+  background-color: #179cf6;
+  color: #fff;
+  border: none;
+  padding: 6px 9px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.pagination button:hover {
+  scale: 1.04;
+}
+
+.pagination button:disabled {
+  background-color: #6b6b6b;
+  color: #c0c0c0;
+}
+
+@media (max-width: 1000px) {
+  .bio {
+    width: 70%;
+    min-width: 270px;
+  }
+
+  .signUpAsWriter {
+    margin-top: 5px;
+  }
+
+  .signUpAsWriter h3 {
+    margin-top: 5px;
+  }
+
+  .signUpAsWriter p {
+    width: 80%;
+    font-size: 14px;
+  }
+
+  .releasesHeader h3,
+  .bookmarkHeader {
+    font-size: 23px;
+  }
+
+  .releasesHeader a {
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+}

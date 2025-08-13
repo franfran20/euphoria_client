@@ -1,0 +1,65 @@
+.connectButton {
+  background-color: #179cf6;
+  color: #fff;
+  border-radius: 14px;
+  font-size: 16px;
+  border: none;
+  padding: 8px 12px;
+}
+
+.connectButton:hover {
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  scale: 1.04;
+}
+
+.signInButton {
+  background-color: #000000;
+  color: #fff;
+  border-radius: 14px;
+  font-size: 16px;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 10px;
+}
+
+.signInButton:hover {
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  scale: 1.04;
+}
+
+.disconnect {
+  background-color: #dddddd;
+  color: #000;
+  border-radius: 14px;
+  font-size: 16px;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 10px;
+}
+
+.disconnect:hover {
+  cursor: pointer;
+  font-weight: bold;
+  scale: 1.04;
+}
+
+.logoutButton {
+  background-color: #ffffffcc;
+  color: #000;
+  border-radius: 14px;
+  font-size: 16px;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 10px;
+}
+
+.logoutButton:hover {
+  cursor: pointer;
+  background-color: #fff;
+  font-weight: bold;
+  scale: 1.04;
+}

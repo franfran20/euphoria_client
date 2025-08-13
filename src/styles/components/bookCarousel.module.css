@@ -1,0 +1,140 @@
+.carousel {
+  position: relative;
+  width: 100vw;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: center;
+  transition: opacity 0.8 ease;
+  opacity: 1;
+  z-index: 3; /*slide index = 3*/
+  transition: opacity 0.5s ease-in-out;
+}
+
+.inactive {
+  opacity: 0;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  width: 100vw;
+  height: 70vh;
+  width: 100%;
+  height: 100%;
+  background-color: #0000008e;
+  z-index: 5; /*overlay index = 5, above content index*/
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  z-index: 4; /* content index = 4, below overlay because it contains image and arrows */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 15px;
+}
+
+.bookContent {
+  display: flex;
+  flex-direction: column;
+  z-index: 6; /*book content index = 5, above content and overlay because its writing for visibilty*/
+  margin-left: 40px;
+}
+
+.bookContent h2 {
+  font-size: 70px;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.bookContent p {
+  font-size: 22px;
+  margin-top: 10px;
+  font-weight: 800;
+}
+
+.bookContent .genres {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.genres span {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #ffffffa8;
+}
+
+.chaptersAndCreatedAt {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.goToBook {
+  background-color: #179cf6;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 14px;
+  width: fit-content;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.goToBook:hover {
+  scale: 1.05;
+  background-color: #1d1d1d;
+}
+
+@media (max-width: 1000px) {
+  .bookContent {
+    margin-left: 10px;
+  }
+
+  .bookContent h2 {
+    font-size: 50px;
+  }
+
+  .bookContent p {
+    font-size: 20px;
+  }
+
+  .genres span {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #ffffffa8;
+  }
+}
+
+@media (max-width: 750px) {
+  .bookContent {
+    margin-left: 10px;
+  }
+
+  .bookContent h2 {
+    font-size: 35px;
+  }
+
+  .bookContent p {
+    font-size: 18px;
+  }
+
+  .genres span {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #ffffffa8;
+  }
+}

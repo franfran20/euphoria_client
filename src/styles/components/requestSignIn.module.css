@@ -1,0 +1,23 @@
+.requestSignIn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+.signInIcon {
+  width: 70px;
+  height: auto;
+}
+
+.requestSignIn h3 {
+  font-size: 25px;
+  color: #179cf6;
+}
+
+.requestSignIn p {
+  width: 80%;
+  text-align: center;
+  max-width: 600px;
+}

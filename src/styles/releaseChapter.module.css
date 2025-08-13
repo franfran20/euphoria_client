@@ -1,0 +1,152 @@
+.page {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.writeChapterDetails {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.writeChapterDetails h3 {
+  margin: 20px 0px;
+  font-size: 22px;
+}
+
+.writeChapterDetails span {
+  color: #179cf6;
+}
+
+.writeChapterDetails input {
+  background-color: transparent;
+  border: 1px solid #e0e0e03f;
+  color: #fff;
+  padding: 7px 11px;
+  font-size: 16px;
+  border-radius: 12px;
+  width: 40%;
+  max-width: 450px;
+  min-width: 300px;
+}
+
+.writeChapterDetails p {
+  font-size: 14px;
+  margin: 20px 0px;
+  margin-right: 3px;
+  display: flex;
+  align-items: center;
+}
+
+.extIcon {
+  margin-left: 6px;
+}
+
+.finale,
+.notFinale {
+  padding: 4px 10px;
+  border-radius: 12px;
+  border: none;
+  width: fit-content;
+}
+
+.finale {
+  background-color: #179cf6;
+}
+
+.notFinale {
+  background-color: #1d1d1d;
+  color: #fff;
+}
+
+.writeAndPreview {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.writeAndPreview .header {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.selectedMode {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.unselectedMode {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fffff081;
+}
+
+.writeAndPreviewDisplay {
+  width: 100%;
+  height: 600px;
+  margin-bottom: 20px;
+}
+
+.writeAndPreviewDisplay textarea {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 1px solid #1f1f1fda;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.writeAndPreviewDisplay .preview {
+  width: 100%;
+  height: 600px;
+  overflow-y: scroll;
+}
+
+.preview h1,
+.preview h2,
+.preview h3,
+.preview h4,
+.preview h5,
+.preview h6 {
+  margin: 13px 0px;
+  font-size: 17px;
+}
+
+.preview p,
+.preview p,
+.preview p,
+.preview p,
+.preview p,
+.preview p {
+  margin: 13px 0px;
+  font-size: 14px;
+}
+
+.preview ol,
+.preview li {
+  margin: 5px 0px;
+}
+
+.bottomBar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 5px 14px;
+}
+
+.bottomBar button {
+  padding: 8px 12px;
+  border-radius: 11px;
+  border: none;
+  font-size: 15px;
+  font-weight: 800;
+  background-color: #179cf6;
+  color: #ffffff;
+}
+
+.bottomBar buton:hover {
+  background-color: #000000;
+}
