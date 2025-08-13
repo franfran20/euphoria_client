@@ -18,8 +18,8 @@ export const BookCarousel = () => {
 
   const slideIntervalTime = 5000;
 
-  const nextSlide = () => setCurrent((prev) => (prev + 1) % 2);
-  const prevSlide = () => setCurrent((prev) => (prev - 1 + 2) % 2);
+  const nextSlide = () => setCurrent((prev) => (prev + 1) % 4);
+  const prevSlide = () => setCurrent((prev) => (prev - 1 + 4) % 4);
 
   useEffect(() => {
     const interval = setInterval(() => {
