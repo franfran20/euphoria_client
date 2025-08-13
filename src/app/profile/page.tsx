@@ -298,8 +298,8 @@ export default function ProfilePage() {
             </div>
           </div>
 
-          <Link href="/faucet" className={styles.visitFaucet}>
-            Visit faucet &gt;
+          <Link href="/books/release" className={styles.releaseBookBtn}>
+            Release New Book &gt;
           </Link>
         </div>
 

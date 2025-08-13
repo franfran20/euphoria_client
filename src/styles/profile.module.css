@@ -128,14 +128,14 @@
   margin-left: 10px;
 }
 
-.visitFaucet {
+.releaseBookBtn {
   margin-top: 18px;
-  font-size: 14px;
-  color: #ffffff73;
+  font-size: 16px;
+  color: #fffffff5;
 }
 
-.visitFaucet:hover {
-  color: #fff;
+.releaseBookBtn:hover {
+  color: #ffffffc0;
   scale: 1.04;
 }
 
