@@ -2,7 +2,7 @@ import { gql } from "@apollo/client";
 
 export const GET_FIRST_FIVE_BOOKS = gql`
   query firstFive {
-    euphoriaBookCreateds(first: 3) {
+    euphoriaBookCreateds(first: 5) {
       bookId
       coverImage
       name
