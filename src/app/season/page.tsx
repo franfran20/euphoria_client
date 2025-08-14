@@ -17,6 +17,7 @@ import {
 import { RequestSignIn } from "@/components/RequestSignIn";
 import { toast } from "react-toastify";
 import { AxiosError } from "axios";
+import { useRouter } from "next/navigation";
 
 export default function SeasonPage() {
   // client state
@@ -42,6 +43,9 @@ export default function SeasonPage() {
     isAuthenticated,
     isCheckingAuth,
   } = useAuthStore();
+
+  // router
+  const router = useRouter();
 
   // wagmi
   const { isConnected } = useAccount();
@@ -75,6 +79,7 @@ export default function SeasonPage() {
       response = await api.post("/seasons/start");
       setStartNewSeasonloading(false);
       toast.success(`Succesfully Started New Season `);
+      router.refresh();
     } catch (error) {
       setStartNewSeasonloading(false);
       if (error instanceof AxiosError) {

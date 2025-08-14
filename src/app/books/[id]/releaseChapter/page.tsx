@@ -122,6 +122,7 @@ export default function ReleaseChapterPage() {
 
       setReleaseChapterLoading(false);
       toast.success(`Succesfully Released Chapter`);
+      router.refresh();
     } catch (error) {
       setReleaseChapterLoading(false);
       if (error instanceof AxiosError) {

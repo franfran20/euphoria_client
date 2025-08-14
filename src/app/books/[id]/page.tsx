@@ -124,6 +124,7 @@ export default function BookPage() {
       });
       setPullBookEarningsLoading(false);
       toast.success(`Succesfully Pulled Book Earnings.`);
+      router.refresh();
     } catch (error) {
       setPullBookEarningsLoading(false);
       if (error instanceof AxiosError) {
@@ -172,6 +173,7 @@ export default function BookPage() {
       });
       setVoteCountLoading(false);
       toast.success(`Succesfully Voted Book`);
+      router.refresh();
     } catch (error) {
       setVoteCountLoading(false);
       if (error instanceof AxiosError) {
@@ -226,6 +228,7 @@ export default function BookPage() {
           DECIMALS
         )} USDC to Book ID: ${bookId} writer.`
       );
+      router.refresh();
     } catch (error) {
       setAllocationAmountLoading(false);
       if (error instanceof AxiosError) {

@@ -19,6 +19,7 @@ import { AxiosError } from "axios";
 import { Loader2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import { formatUnits, parseSignature, parseUnits } from "viem";
@@ -43,6 +44,9 @@ export default function ProfilePage() {
   // contract read
   const [user, setUser] = useState<undefined | User>();
   const [pageLoading, setPageLoading] = useState(true);
+
+  // router
+  const router = useRouter();
 
   // authentication
   const {
@@ -79,6 +83,7 @@ export default function ProfilePage() {
       toast.success(
         `Succesfully Minted ${formatUnits(mintAmount!, DECIMALS)} USDC`
       );
+      router.refresh();
     } catch (error) {
       setMintLoading(false);
       if (error instanceof AxiosError) {
@@ -98,8 +103,12 @@ export default function ProfilePage() {
         args: [withdrawAmount!, signedInUser!],
       });
       toast.success(
-        `Succesfully Minted ${formatUnits(mintAmount!, DECIMALS)} USDC`
+        `Succesfully Withdrawn ${parseUnits(
+          withdrawAmount!.toString(),
+          DECIMALS
+        )} USDC`
       );
+      router.refresh();
     } catch (error) {
       console.log(error);
       toast.error("Something went wrong withdrawing");
@@ -143,6 +152,7 @@ export default function ProfilePage() {
       });
       setSubscribeLoading(false);
       toast.success("Succesfully Subscribed");
+      router.refresh();
     } catch (error) {
       setSubscribeLoading(false);
       if (error instanceof AxiosError) {
@@ -190,6 +200,7 @@ export default function ProfilePage() {
       });
       setRegsiterLoading(false);
       toast.success(`Succesfully Registed As ${usernameInput}`);
+      router.refresh();
     } catch (error) {
       setRegsiterLoading(false);
       if (error instanceof AxiosError) {

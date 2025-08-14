@@ -14,6 +14,7 @@ import { formatUnits } from "viem";
 import { useSignTypedData } from "wagmi";
 import { CREATE_BOOK_TYPED_DATA } from "@/utils/typedData";
 import { parseSignature } from "viem";
+import { useRouter } from "next/navigation";
 
 export default function ReleaseNewBookpage() {
   // contract params
@@ -31,6 +32,9 @@ export default function ReleaseNewBookpage() {
   // contract read
   const [pageLoading, setPageLoading] = useState(true);
   const [user, setUser] = useState<undefined | User>();
+
+  // router
+  const router = useRouter();
 
   // autheneticaton
   const {
@@ -97,6 +101,7 @@ export default function ReleaseNewBookpage() {
       setCreateBookLoading(false);
       console.log(response.data.book.bookId);
       toast.success("Succesfully Created Book");
+      router.refresh();
     } catch (error) {
       setCreateBookLoading(false);
 
