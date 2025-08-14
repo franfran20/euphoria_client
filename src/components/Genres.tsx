@@ -4,12 +4,12 @@ export const Genres = ({ genres }: { genres: number[] }) => {
   return (
     <div className="genres">
       {<span>{BOOK_GENRES[genres[0]]}</span>}
-      {genres[1] != (undefined || null) && (
+      {genres[1] != undefined && (
         <div className="littleCircle" style={{ marginRight: "7px" }}></div>
       )}
 
       {<span>{BOOK_GENRES[genres[1]]}</span>}
-      {genres[2] != (undefined || null) && (
+      {genres[2] != undefined && (
         <div className="littleCircle" style={{ marginRight: "7px" }}></div>
       )}
 
