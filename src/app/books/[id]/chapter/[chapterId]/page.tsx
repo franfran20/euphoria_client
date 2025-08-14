@@ -71,9 +71,7 @@ export default function ReadChapterPage() {
 
     // has access
     try {
-      const response = await api.get(
-        `/books/${bookId}/chapter/${Number(chapterId) - 1}`
-      );
+      const response = await api.get(`/books/${bookId}/chapter/${chapterId}`);
       if (response.data.content && response.data.content.length > "2") {
         setHasAccess(true);
         setChapterContent(response.data.content);

@@ -28,7 +28,7 @@ export const ChapterInformation = ({
   chaptersWritten: number;
   chapterLock: number;
 }) => {
-  const [chapterId, setChapterId] = useState("1");
+  const [chapterId, setChapterId] = useState<undefined | string>();
 
   return (
     <div className={styles.chapterInformation}>
