@@ -288,7 +288,7 @@ export default function BookPage() {
             <div className={styles.genre}>
               <Genres genres={bookDetails![0].genres.map((g) => Number(g))} />
             </div>
-            <span>{displayDate(Number(bookDetails![0].completed))}</span>
+            <span>{displayDate(Number(bookDetails![0].createdAt))}</span>
 
             {/* books and chapters written */}
             <div className={styles.bookmarksAndChapterWritten}>
@@ -420,7 +420,7 @@ export default function BookPage() {
           {/* book season boxes */}
           <div className={styles.bookSeasonAllocations}>
             {/* allocation balance */}
-            {signedInUser == bookDetails![0].owner && (
+            {signedInUser != bookDetails![0].owner && (
               <div className={styles.info}>
                 <h5>Allocation balance</h5>
                 <div>
