@@ -47,15 +47,17 @@ export const Navbar = () => {
         </div>
 
         {/* navigation links */}
-        <div className={styles.navLinks}>
-          {navLinks.map((link) => {
-            return (
-              <Link key={link.name} href={link.href}>
-                {link.name}
-              </Link>
-            );
-          })}
-        </div>
+        {isAuthenticated && (
+          <div className={styles.navLinks}>
+            {navLinks.map((link) => {
+              return (
+                <Link key={link.name} href={link.href}>
+                  {link.name}
+                </Link>
+              );
+            })}
+          </div>
+        )}
 
         {/* buttons: connect, sign in, disconnect and logout */}
         <div className={styles.authButtons}>
@@ -102,19 +104,21 @@ export const Navbar = () => {
         />
 
         {/* sidebar navigation links */}
-        <div className={styles.sidebarLinks}>
-          {navLinks.map((link) => {
-            return (
-              <Link
-                key={link.name}
-                href={link.href}
-                onClick={() => setSidebarOpen(false)}
-              >
-                {link.name}
-              </Link>
-            );
-          })}
-        </div>
+        {isAuthenticated && (
+          <div className={styles.sidebarLinks}>
+            {navLinks.map((link) => {
+              return (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  onClick={() => setSidebarOpen(false)}
+                >
+                  {link.name}
+                </Link>
+              );
+            })}
+          </div>
+        )}
 
         {/* buttons: connect, sign in, disconnect and logout */}
         <div className={styles.authButtonSidebar}>
