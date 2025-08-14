@@ -183,7 +183,7 @@ export default function ReleaseChapterPage() {
       {/* write chapter details */}
       <div className={styles.writeChapterDetails}>
         <h3>
-          Write Chapter: <span>#{bookDetails![0].chaptersWritten}</span>
+          Write Chapter: <span>#{bookDetails![0].chaptersWritten + 1}</span>
         </h3>
         <input
           placeholder="Chapter title"
